@@ -2,6 +2,7 @@ import { showPopupMessage } from './ui.js?v=1';
 import { db, onAuthChange, signInWithGoogle, signOutUser, getCurrentUser } from './auth.js?v=1';
 import { getLikedIds, setLikedIds } from './likes.js?v=1';
 import { doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-firestore.js";
+import { initTheme } from './theme.js?v=1';
 
 const avatarEl = document.getElementById('accountAvatar');
 const greetingEl = document.getElementById('accountGreeting');
@@ -23,6 +24,7 @@ function ensureBaseElements() {
   }
 }
 
+initTheme();
 ensureBaseElements();
 
 homeButton?.addEventListener('click', () => {
@@ -116,7 +118,7 @@ function renderLikes(ids) {
       <p class="like-item__text">${quote.text}</p>
       <div class="like-item__meta">
         <span class="like-item__author">${authorLabel}</span>
-        <button class="like-item__delete" type="button" data-quote-id="${quote.id ?? id}">
+        <button class="like-item__delete button-theme button-theme--outline" type="button" data-quote-id="${quote.id ?? id}">
           <i class="fa-solid fa-trash-can" aria-hidden="true"></i>
           <span>Retirer</span>
         </button>

@@ -17,17 +17,32 @@ export function showPopupMessage(text, options = {}) {
 
   // buttons
   const buttons = options.buttons || [];
+  const resolveClasses = (original) => {
+    if (!original) return 'button-theme';
+    const hasGhost = original.includes('btn-ghost');
+    const hasPrimary = original.includes('btn-primary');
+    let base = original.replace(/btn-ghost|btn-primary/g, '').trim();
+    if (hasGhost) {
+      base = `button-theme button-theme--outline ${base}`.trim();
+    } else if (hasPrimary) {
+      base = `button-theme ${base}`.trim();
+    } else {
+      base = `button-theme ${base}`.trim();
+    }
+    return base || 'button-theme';
+  };
+
   if (buttons.length === 0) {
     // default OK
     const ok = document.createElement('button');
-    ok.className = 'btn-primary';
+    ok.className = 'button-theme';
     ok.textContent = 'OK';
     ok.addEventListener('click', () => close());
     actions.appendChild(ok);
   } else {
     buttons.forEach(b => {
       const btn = document.createElement('button');
-      btn.className = b.className || 'btn-ghost';
+      btn.className = resolveClasses(b.className);
       btn.textContent = b.text || 'OK';
       btn.addEventListener('click', () => {
         if (typeof b.onClick === 'function') b.onClick();

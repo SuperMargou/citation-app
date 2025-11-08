@@ -2,6 +2,7 @@ import { showPopupMessage } from './ui.js?v=1';
 import { doc, setDoc, getDoc, updateDoc, arrayUnion, arrayRemove } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-firestore.js";
 import { db, onAuthChange, signInWithGoogle, getCurrentUser } from './auth.js?v=1';
 import { getLikedIds, isLiked, addLikeLocal, removeLikeLocal, setLikedIds } from './likes.js?v=1';
+import { initTheme } from './theme.js?v=1';
 
 const container = document.getElementById('quote-container');
 const quoteText = document.getElementById('quote-text');
@@ -9,6 +10,8 @@ const quoteAuthor = document.getElementById('quote-author');
 const likeBtn = document.getElementById('like-btn');
 const shareBtn = document.getElementById('share-btn');
 const accountButton = document.getElementById('accountButton');
+
+initTheme();
 
 const MAX_HISTORY = 5;
 const SWIPE_THRESHOLD = 80;

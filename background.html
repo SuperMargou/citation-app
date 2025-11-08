@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HazeApp - Fonds d'écran</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./background/background.css">
+  <link rel="icon" type="image/png" sizes="192x192" href="./image/logo.png">
+  <link rel="apple-touch-icon" href="./image/logo.png">
+  <script src="https://kit.fontawesome.com/b57b6f573f.js" crossorigin="anonymous"></script>
+</head>
+<body class="background-page">
+  <header class="site-header site-header--background">
+    <a href="./" class="logo-link" aria-label="HazeApp - accueil">
+      <img src="./image/logo.png" alt="Logo HazeApp" class="site-logo">
+    </a>
+    <div class="header-actions" role="navigation" aria-label="Navigation HazeApp">
+      <a href="./" class="account-btn account-btn--icon account-btn--nav" aria-label="Retour accueil" title="Accueil">
+        <i class="fa-solid fa-house-chimney" aria-hidden="true"></i>
+      </a>
+      <span class="nav-divider" aria-hidden="true"></span>
+      <a href="./background.html" class="account-btn account-btn--icon account-btn--nav account-btn--accent" aria-label="Fond d'Ã©cran" title="Fond d'Ã©cran">
+        <i class="fa-solid fa-sheet-plastic" aria-hidden="true"></i>
+      </a>
+      <a href="./account.html" class="account-btn account-btn--icon account-btn--nav" aria-label="Compte" title="Compte">
+        <i class="fa-solid fa-user" aria-hidden="true"></i>
+      </a>
+    </div>
+  </header>
+
+  <main class="background-shell">
+    <section class="background-panel background-panel--preview">
+      <p class="eyebrow">Prévisualisation</p>
+      <div class="preview-card" data-preview data-tone="light" style="--preview-image: url('./background/theme-sakura.jpg'); --preview-accent: #c94a66;">
+        <div class="preview-card__content">
+          <p class="preview-card__eyebrow">Aa</p>
+          <h1 class="preview-card__title" data-preview-title>Sakura pastel</h1>
+          <p class="preview-card__description" data-preview-description>Dégradées doux pour un moment suspendu.</p>
+        </div>
+        <div class="preview-card__chip" data-preview-chip>ThÃ¨me actuel</div>
+      </div>
+      <div class="preview-actions">
+        <button class="apply-button button-theme" type="button" data-apply-theme disabled>Appliquer</button>
+        <p class="apply-status" data-apply-status>Sélectionner un thème.</p>
+      </div>
+    </section>
+
+            <section class="background-panel">
+      <div class="theme-grid">
+        <button class="theme-card" type="button"
+          data-theme-card
+          data-theme-id="sakura"
+          data-name="Rosée Kyoto"
+          data-description="Rose poudré et brise florale apaisante."
+          data-tone="light"
+          data-accent="#d97da3"
+          data-buttons="accent"
+          data-button-text="#2c0f1c"
+          data-icons="#ffffff"
+          data-active-icon="#ffffff"
+          data-active-bg="#fde6f1"
+          data-active-shadow="rgba(217, 125, 163, 0.45)"
+          data-action-icon="#d97da3"
+          data-logo="#fde6f1"
+          data-logo-ring="#d97da3"
+          data-image="./background/theme-sakura.jpg"
+          style="--card-image: url('./background/theme-sakura.jpg');">
+          <span class="theme-card__badge">Aa</span>
+          <span class="theme-card__title">Rosée Kyoto</span>
+          <span class="theme-card__meta">Brume florale</span>
+        </button>
+
+        <button class="theme-card" type="button"
+          data-theme-card
+          data-theme-id="glacier"
+          data-name="Glacier Azur"
+          data-description="Bleus immaculées et reflets givrées."
+          data-tone="light"
+          data-accent="#58a8ff"
+          data-buttons="accent"
+          data-button-text="#041a2f"
+          data-icons="#ffffff"
+          data-active-icon="#ffffff"
+          data-active-bg="#dfefff"
+          data-active-shadow="rgba(88, 168, 255, 0.45)"
+          data-action-icon="#58a8ff"
+          data-logo="#d9ecff"
+          data-logo-ring="#84c1ff"
+          data-image="./background/theme-winter.jpg"
+          style="--card-image: url('./background/theme-winter.jpg');">
+          <span class="theme-card__badge">Aa</span>
+          <span class="theme-card__title">Glacier Azur</span>
+          <span class="theme-card__meta">Eaux boréales</span>
+        </button>
+
+        <button class="theme-card" type="button"
+          data-theme-card
+          data-theme-id="city"
+          data-name="Nocturne Métropole"
+          data-description="Lueurs ambrées et ciel nocturne citadin."
+          data-tone="dark"
+          data-accent="#f2a26d"
+          data-buttons="accent"
+          data-button-text="#2d1404"
+          data-icons="#ffffff"
+          data-active-icon="#ffffff"
+          data-active-bg="rgba(242, 162, 109, 0.18)"
+          data-active-shadow="rgba(242, 162, 109, 0.45)"
+          data-action-icon="#f2a26d"
+          data-logo="#1e1411"
+          data-logo-ring="#f2a26d"
+          data-image="./background/theme-city.jpg"
+          style="--card-image: url('./background/theme-city.jpg');">
+          <span class="theme-card__badge">Aa</span>
+          <span class="theme-card__title">Nocturne Métropole</span>
+          <span class="theme-card__meta">City lights</span>
+        </button>
+
+        <button class="theme-card" type="button"
+          data-theme-card
+          data-theme-id="forest"
+          data-name="Sylve Dorée"
+          data-description="Rayons filtrées et forêt aurorale."
+          data-tone="dark"
+          data-accent="#f0c25f"
+          data-buttons="accent"
+          data-button-text="#231300"
+          data-icons="#ffffff"
+          data-active-icon="#ffffff"
+          data-active-bg="rgba(240, 194, 95, 0.18)"
+          data-active-shadow="rgba(240, 194, 95, 0.45)"
+          data-action-icon="#f0c25f"
+          data-logo="#122014"
+          data-logo-ring="#f0c25f"
+          data-image="./background/theme-forest.jpg"
+          style="--card-image: url('./background/theme-forest.jpg');">
+          <span class="theme-card__badge">Aa</span>
+          <span class="theme-card__title">Sylve Dorée</span>
+          <span class="theme-card__meta">Rayon dorée</span>
+        </button>
+
+        <button class="theme-card" type="button"
+          data-theme-card
+          data-theme-id="ocean"
+          data-name="Ocean Pulse"
+          data-description="Jet d'écume et dégradées bleu profond."
+          data-tone="dark"
+          data-accent="#52d4ff"
+          data-buttons="accent"
+          data-button-text="#031823"
+          data-icons="#ffffff"
+          data-active-icon="#ffffff"
+          data-active-bg="rgba(82, 212, 255, 0.18)"
+          data-active-shadow="rgba(82, 212, 255, 0.45)"
+          data-action-icon="#52d4ff"
+          data-logo="#061c29"
+          data-logo-ring="#52d4ff"
+          data-image="./background/theme-ocean.jpg"
+          style="--card-image: url('./background/theme-ocean.jpg');">
+          <span class="theme-card__badge">Aa</span>
+          <span class="theme-card__title">Ocean Pulse</span>
+          <span class="theme-card__meta">Onde marine</span>
+        </button>
+
+        <button class="theme-card" type="button"
+          data-theme-card
+          data-theme-id="serenity"
+          data-name="Aurore Sereine"
+          data-description="Lever de soleil doré sur mer de nuages."
+          data-tone="dark"
+          data-accent="#f3bd7a"
+          data-buttons="accent"
+          data-button-text="#2b1504"
+          data-icons="#ffffff"
+          data-active-icon="#ffffff"
+          data-active-bg="rgba(243, 189, 122, 0.18)"
+          data-active-shadow="rgba(243, 189, 122, 0.45)"
+          data-action-icon="#f3bd7a"
+          data-logo="#21140d"
+          data-logo-ring="#f3bd7a"
+          data-image="./background/theme-serenity.jpg"
+          style="--card-image: url('./background/theme-serenity.jpg');">
+          <span class="theme-card__badge">Aa</span>
+          <span class="theme-card__title">Aurore Sereine</span>
+          <span class="theme-card__meta">Horizon dorée</span>
+        </button>
+
+        <button class="theme-card" type="button"
+          data-theme-card
+          data-theme-id="haze"
+          data-name="Nébuleuse Céleste"
+          data-description="Veille turquoise et lignes minimalistes."
+          data-tone="dark"
+          data-accent="#73d1d6"
+          data-buttons="accent"
+          data-button-text="#022024"
+          data-icons="#ffffff"
+          data-active-icon="#ffffff"
+          data-active-bg="rgba(115, 209, 214, 0.2)"
+          data-active-shadow="rgba(115, 209, 214, 0.45)"
+          data-action-icon="#73d1d6"
+          data-logo="#081c1e"
+          data-logo-ring="#73d1d6"
+          data-image="./background/theme-haze.jpg"
+          style="--card-image: url('./background/theme-haze.jpg');">
+          <span class="theme-card__badge">Aa</span>
+          <span class="theme-card__title">Nébuleuse Céleste</span>
+          <span class="theme-card__meta">Turquoise zen</span>
+        </button>
+
+      </div>
+    </section>  </main>
+
+  <script type="module" src="./background/background.js?v=1"></script>
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+{
+  "name": "Haze – Citations App",
+  "short_name": "Haze",
+  "description": "Une expérience minimaliste et apaisante autour de la lecture de citations inspirantes.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#f5f0e6",
+  "theme_color": "#f5f0e6",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "image/logo-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "image/logo-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

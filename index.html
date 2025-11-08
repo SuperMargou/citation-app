@@ -14,9 +14,14 @@
     <a href="/" class="logo-link" aria-label="HazeApp - Citation accueil">
       <img src="./image/logo.png" alt="Logo HazeApp" class="site-logo">
     </a>
-    <button id="accountButton" aria-label="Compte" class="account-btn account-btn--icon">
-      <i class="fa-solid fa-user"></i>
-    </button>
+    <div class="header-actions" role="navigation" aria-label="Accès rapide">
+      <a href="./background.html" class="account-btn account-btn--icon account-btn--nav account-btn--accent" aria-label="Fond d'écran" title="Fond d'écran">
+        <i class="fa-solid fa-sheet-plastic" aria-hidden="true"></i>
+      </a>
+      <button id="accountButton" aria-label="Compte" class="account-btn account-btn--icon account-btn--nav">
+        <i class="fa-solid fa-user"></i>
+      </button>
+    </div>
   </header>
 
   <div id="popup-root"></div>
@@ -27,10 +32,10 @@
       <p id="quote-author">Author</p>
     </div>
 
-    <div id="buttons">
-      <button id="like-btn" aria-label="Like"><i class="fa-regular fa-heart fa-beat"></i></button>
-      <button id="share-btn" aria-label="Share"><i class="fa-regular fa-share-from-square fa-beat"></i></button>
-    </div>
+      <div id="buttons">
+        <button id="like-btn" aria-label="Like"><i class="fa-regular fa-heart fa-beat"></i></button>
+        <button id="share-btn" aria-label="Share"><i class="fa-regular fa-share-from-square fa-beat"></i></button>
+      </div>
   </main>
 
   <script type="module" src="./script.js?v=1"></script>
